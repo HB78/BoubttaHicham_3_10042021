@@ -1,0 +1,125 @@
+body{
+    margin:0;
+    padding:0 0%;
+    box-sizing: border-box;
+    max-width:480px;
+}
+.logo{
+    width:50vw;
+    padding:1.3rem 0rem;
+    margin:0% 24%;
+}
+.logofooter{
+    width:20vw;
+}
+
+.intro{
+   display:flex;
+   border: 1px solid transparent;
+   background-color:rgb(204, 195, 195);
+   width:100%;
+   height: 10vw;
+   justify-content: center;
+   align-items: center;
+}
+
+.introtext{
+    background-color:#F2F2F2;
+    height:85vw;
+    padding-top:0.09%;
+}
+.introtexth1{
+    text-align: center;
+    font-weight: bold;
+    font-size:35px;
+}
+.introtextp{
+    text-align: center;
+    font-size: 22px;
+}
+.btn{
+   width:70vw;
+   height:15%;
+   padding:2% 5%;
+   margin-top:5%;
+   margin-left:15%;
+   margin-right:15%;
+   box-sizing: border-box;
+   border-radius: 2rem;
+   border: transparent;
+   font-size:17.5px;
+   background-color: #FF79DA;
+   color: white;
+   box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+.image{
+   width:30px;
+}
+.fonctionality__cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:80vw;
+}
+.cards{
+    display: flex;
+    border: 1px solid transparent;
+    background-color: #F2F2F2;
+    height:20vw;
+    width:90%;
+    margin:0% 4%;
+    border-radius:1.3rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cards__number{
+    border-radius:100%;
+    padding:0.1rem 0.4rem;
+    height:15px;
+    background-color:#9356DC;
+    color:white;
+    font-size:12px;  
+}
+.cards__text{
+    font-size:20px;
+    font-weight:550;
+    text-align: left;
+}
+
+.cards__icone--color{
+   color:#9356DC;
+}
+section{
+    background-color:grey;
+    height:auto;
+}
+.articlecontainer{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:80%;
+    justify-content: space-around;
+}
+.articlecontainer__restaurant{
+    width:95%;
+    height:15%;
+    border: 1px solid transparent;
+    background-color:white;
+    border-radius:1rem;
+    
+}
+
+.image{
+    width:80%;
+    height:60%;
+    border-radius:1rem;
+    overflow: hidden;
+}
+.image--size{
+    width:80%;
+    height:40%;
+    border-radius:1rem;
+}
