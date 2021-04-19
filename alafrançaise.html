@@ -6,40 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/5422ec4325.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&family=Shrikhand&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="menu.css">
     <title>A la française</title>
 </head>
 
 <body>
  <!--HEADER-->
-  <header>
-    <a><i class="fas fa-arrow-left"></i></a>
-    <img src="./logo/ohmyfood.png" alt="logodu site">
+  <header class="header">
+    <div class="header__icon"><a><i class="fas fa-arrow-left"></i></a></div>
+    <div><img class="header__logo" src="./logo/ohmyfood.png" alt="logo du site"></div>
   </header>
  <!--HEADER-->
  
  <!--SECTION-->
-  <div><img src="./restaurants/delta.jpg"></div>
+  <div><img class="image" src="./restaurants/delta.jpg"></div>
   <section>
-   <h1>A la française</h1>
-   <span><i class="fas fa-mobile-alt"></i></span>
-   
-    <article>
-      <h4>ENTREES</h4>
-        <div>
-            <div><p>Tartare de poule acidulé</p>
+   <div class="section__menu">
+     <h1 class="section__menu__title">A la française</h1>
+     <div class="section__menu__icon"><i class="coeur2 far fa-heart" aria-hidden="true"></i></div>
+   </div>
+
+    <h4 class="titlemenu">ENTREES</h4>
+    <article class="article__menu">
+        <div class="article__menu__food">
+            <div>
+                 <p class="article__menu__food__mixture">Tartare de poule acidulé</p>
                  <p>Aux zests d'orange</p>
             </div>
             <div><p><strong>25€</strong></p></div>
         </div>
-        <div>
-            <div><p>Velouté de légume d'antan</p>
+        <div class="article__menu__food">
+            <div>
+                 <p class="article__menu__food__mixture">Velouté de légume d'antan</p>
                  <p>Carotte, panais, topinambour</p>
             </div>
             <div><p><strong>35€</strong></p></div>
         </div>
-        <div>
+        <div class="article__menu__food">
             <div>
-                <p>Soupe à l'oignon</p>
+                <p class="article__menu__food__mixture">Soupe à l'oignon</p>
                 <p>Revisité</p>
             </div>
             <div><p><strong>20€</strong></p></div>
@@ -47,70 +55,80 @@
         
     </article>
 
-    <article>
-        <h4>PLATS</h4>
-        <div>
-            <div><p>Coquilles Sain-Jacques</p>
+    <h4 class="titlemenu">PLATS</h4>
+    <article class="article__menu">
+        <div class="article__menu__food">
+            <div>
+                 <p class="article__menu__food__mixture">Coquilles Sain-Jacques</p>
                  <p>accompagnées d'une purée de panais</p>
             </div>
             <div><p><strong>40€</strong></p></div>
         </div>
-        <div>
-            <div><p>Magret de canard</p>
+        <div class="article__menu__food">
+            <div><p class="article__menu__food__mixture">Magret de canard</p>
                  <p>Et parmentier de pommes de terres</p>
             </div>
             <div><p><strong>35€</strong></p></div>
         </div>
-        <div>
-            <div><p>Pigeonneau d'Ille-et-Vilaine</p>
+        <div class="article__menu__food">
+            <div><p class="article__menu__food__mixture">Pigeonneau d'Ille-et-Vilaine</p>
                  <p>Sur son lit de gnocchis aux légumes</p>
             </div>
             <div><p><strong>44€</strong></p></div>
         </div>
     </article>
 
-    <article>
-      <h4>DESSERTS</h4>
-        <div>
-            <div><p>Pétales de violettes glacés</p>
-                 <p>Et purée de noisettes</p>
+    <h4 class="titlemenu">DESSERTS</h4>
+    <div class="filet"></div>
+    <article  class="article__menu">
+        <div class="article__menu__food">
+            <div>
+                 <p class="article__menu__food__mixture">Pétales de violettes glacés</p>
+                 <p class="mixture__subtitle">Et purée de noisettes</p>
             </div>
             <div><p><strong>18€</strong></p></div>
         </div>
-        <div>
-            <div><p>Fondant au chocolat</p>
+        <div class="article__menu__food">
+            <div>
+                 <p class="article__menu__food__mixture">Fondant au chocolat</p>
                  <p>revisité</p>
             </div>
             <div><p><strong>22€</strong></p></div>
         </div>
-        <div>
-            <div><p>Millefeuille croustillant</p>
+        <div class="article__menu__food">
+            <div>
+                 <p class="article__menu__food__mixture">Millefeuille croustillant</p>
                  <p>Myrtille et pate d'amande</p>
             </div>
             <div><p><strong>23€</strong></p></div>
         </div>
     </article>
    
-      <button>COMMANDER</button>
+      <div class="button"><button class="buttoncommande">COMMANDER</button></div>
   </section>
  <!--SECTION-->
 
  <!--FOOTER--> 
  <footer>
-
-    <div><img src="./logo/ohmyfood.png"></div>
-    <div>
-      <p><i class="far fa-utensils-alt"></i></p>
-      <a>Proposer un restaurant</a>
-
-      <p><i class="fal fa-hands-helping"></i></p>
-      <a>Devenir partenaire</a>
-
-      <a>Mentions légales</a>
-      <a>Contact</a>
+    <div class="footer">
+      <div><img class="logofooter" src="./logo/ohmyfood.png"></div>
+      <div class="footer__text">
+  
+        <div class="footer__icon">
+        <p class="footer__icon__font"><i class="fas fa-utensils" aria-hidden="true"></i></p>
+        <a>Proposer un restaurant</a>
+        </div>
+  
+        <div class="footer__icon">
+        <p class="footer__icon__font"><i class="fas fa-hands-helping" aria-hidden="true"></i></p>
+        <div><a>Devenir partenaire</a></div>
+        </div>
+  
+        <div><a>Mentions légales</a></div>
+        <div><a>Contact</a></div>
+      </div>
     </div>
-
-  </footer>
+    </footer>
  <!--FOOTER-->
 
 
