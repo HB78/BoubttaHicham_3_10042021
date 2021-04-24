@@ -94,20 +94,37 @@ section{
     box-shadow: 10px 10px 10px  rgba(0,0,0,12%);
 }
 
-.logofooter{
-    padding-top:6%;
-    width:30%;
+.footer{
+    background-color:#353535;
+    padding:25px 25px 35px;
+    display:flex;
+    flex-direction: column;
     color:white;
+}
+.footer > div {
+    margin: 4px 0;
+}
+.logofooter{
+    font-size: 25px;
+    width:100%;
+    margin: 0px 0px 8px 0px !important;
+    font-family: "Shrikhand", sans-serif;
 }
 .footer__icon{
     display:flex;
     align-items: center;
 }
-.footer__text{
-    color:white;
-}
 .footer__icon__font{
     padding-right:8px;
+    margin: 0px;
+}
+
+.footer a{
+    cursor: pointer;
+}
+
+.footer a:hover{
+    color: #99E2D0;
 }
 .article__menu__food__mixture{
     font-size:18px;
