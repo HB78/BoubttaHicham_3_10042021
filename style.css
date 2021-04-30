@@ -4,7 +4,7 @@ body{
     padding:0 0%;
     box-sizing: border-box;
     margin: auto;
-    max-width:480px;
+    max-width:767px;
     font-family:"Roboto", sans-serif;
     position: inherit;
 }
@@ -22,7 +22,7 @@ header > div {
     height: 30px;
 }
 
-.intro{
+.placerestaurant{
    display:flex;
    border: 1px solid transparent;
    background-color:#EAEAEA;
@@ -31,17 +31,17 @@ header > div {
    justify-content: center;
    align-items: center;
 }
-.iconposition{
+.placerestaurant__iconposition{
     padding-right:2%;
 }
-.textintro{
+.placerestaurant__position{
     color:black;
     font-size:16px;
     font-family: "roboto", sans-serif;
     font-weight: 500;
 }
 
-.container{
+.home{
     background-color:#F6F6F6;
     display: flex;
     align-items: center;
@@ -51,13 +51,13 @@ header > div {
     height: auto;
     justify-content: space-evenly;
 }
-.introtexth1{
+.home__title{
     text-align: center;
     font-weight: 700;
     font-size:22px;
     color:black;
 }
-.introtextp{
+.home__subtitle{
     text-align: center;
     font-size: 16px;
 }
@@ -67,7 +67,7 @@ header > div {
     padding-top: 13%;
     margin: 0px;
 }
-.container .btn{
+.home .home__btn{
    display: flex;
    align-items: center;
    justify-content: center;
@@ -84,7 +84,7 @@ header > div {
    margin-top: 4%;
    transition: transform 150ms;
 }
-.btn:hover{
+.home__btn:hover{
     transform: scale(0.98);
     transition:transform 150ms, box-shadow 150ms;
 }
@@ -99,9 +99,6 @@ header > div {
     height: 330px;
 }
 
-.cards__icone:hover{
-    color:#FF79DA;
-}
 
 .cards{
     display: flex;
@@ -285,4 +282,18 @@ a{
               animation-timing-function: ease-out;
     }
   }
-  
+  .coeur3 {
+      position:absolute;
+      right:5%;
+      top:80%;
+      display:none !important; 
+      color:#9356DC;
+      background-color: white;
+  }
+
+  .coeur2:active + .coeur3 { 
+     display:block !important;
+  }
+  .coeur3:hover + .coeur2 { 
+    display:none;
+ }
