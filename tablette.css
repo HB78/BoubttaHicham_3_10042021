@@ -1,6 +1,7 @@
 @media (min-width:768px) and (max-width:1024px){
     .home .home__btn {
-        width:33vw;
+        width:35vw;
+        font-size: 18px;
     }
 .menupage {
     padding-top:7%;
@@ -17,6 +18,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-shadow: 0 5px 25px 0 rgba(0,0,0,15%);
     }
 
     .cards__text {
@@ -34,6 +36,7 @@
     .articlecontainer {
         height: 1600px;
     }
+    
     .articlecontainer__restaurant {
         height:22%;
         width:80%;
@@ -44,4 +47,7 @@
   .footer {
       align-items: center;
       text-align: center;
+      font-size: 18px;
   }
+
+}
