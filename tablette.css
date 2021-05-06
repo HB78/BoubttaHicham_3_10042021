@@ -6,13 +6,16 @@
 .menupage {
     padding-top:7%;
 }
+
     .fonctionality__cards {
+        position: initial;
         flex-direction: row;
         align-items: center;
         height:500px;
     }
 
     .cards {
+        position:relative;
         height:350px;
         display: flex;
         flex-direction: column;
@@ -20,7 +23,17 @@
         align-items: center;
         box-shadow: 0 5px 25px 0 rgba(0,0,0,15%);
     }
-
+    .cards__number {
+        position:absolute;
+        bottom:-2%;
+        left:44%;
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        padding: 0.5%;
+    }
     .cards__text {
        font-size:20px;
        text-align: center;
@@ -49,5 +62,5 @@
       text-align: center;
       font-size: 18px;
   }
-
+  
 }

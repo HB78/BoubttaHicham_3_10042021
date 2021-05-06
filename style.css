@@ -93,6 +93,7 @@ header > div {
     position: relative;
 }
 .fonctionality__cards{
+    position: initial;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
