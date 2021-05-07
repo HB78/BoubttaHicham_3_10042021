@@ -227,7 +227,11 @@ section {
     transition-duration: 400ms;
     transform: rotate(360deg);
 }
-.article__menu:hover .article__menu__food__price {
+.article__menu__food:hover .article__menu__food__price {
     padding-right:15%;
+}
+a {
+    text-decoration: none;
+    color:black;
 }
 
