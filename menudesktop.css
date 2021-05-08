@@ -1,4 +1,4 @@
-@media (min-width:1024px) and (max-width:1700px) {
+@media (min-width:1025px) and (max-width:1700px) {
     body {
         max-width:1700px;
     }
@@ -29,6 +29,10 @@
     }
     .article__menu__food div > p {
         font-size:20px;
+    }
+    
+    .menucheck__icon {
+        font-size: 1.5rem;
     }
     .titlemenu {
         font-size:20px;
