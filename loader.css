@@ -12,16 +12,19 @@ body {
     justify-content: center;
     align-items: center;
 }
+.loader {
+    position: absolute;
+}
 .lettre {
     color:#484848;
     font-size: 80px;
     letter-spacing: 15px;
     margin-bottom: 150px;
-    animation:flash linear 1.2s infinite;
+    animation:flash linear 1.2s both;
 }
 @keyframes flash {
     0% {
-        opacity:1;
+        opacity:0;
         color:#fff900;
         text-shadow: 0 0 7px #fff900;
     }
@@ -31,7 +34,7 @@ body {
     }
     100% {
         display:none;
-        opacity:0;
+        opacity:1;
         color:#fff900;
         text-shadow: 0 0 7px #fff900;
     }
