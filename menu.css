@@ -264,6 +264,7 @@ a {
 }
 
 /* loading page*/
+
 .loadercontainer {
     position:fixed;
     height:100%;
@@ -286,9 +287,15 @@ a {
     }
 }
 
+.lettre {
+   color:#484848;
+   font-size:7vw;
+   letter-spacing: 15px;
+   margin-bottom: 145px;
+   animation:flash linear 0.7s infinite;
+}
 @keyframes flash {
     0%{
-       
        color:white;
        text-shadow: 0 0 7px #fff900;
     }
@@ -300,12 +307,4 @@ a {
        color:black;
        text-shadow: 0 0 7px #fff900;
     }
-}
-
-.lettre {
-   color:#484848;
-   font-size: 80px;
-   letter-spacing: 15px;
-   margin-bottom: 150px;
-   animation:flash linear 0.7s infinite;
 }

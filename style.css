@@ -327,7 +327,7 @@ a{
 
  .lettre {
     color:#484848;
-    font-size: 80px;
+    font-size:7.5vw;
     letter-spacing: 15px;
     margin-bottom: 145px;
     animation:flash linear 0.7s infinite;
