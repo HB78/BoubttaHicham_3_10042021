@@ -26,10 +26,14 @@
         justify-content: center;
         align-items: center;
         box-shadow: 0 5px 25px 0 rgba(0,0,0,15%);
+        transition: transform 1s;
+    }
+    .cards:hover {
+        transform: scale(1.05);
     }
     .cards__number {
         position:absolute;
-        bottom:-2%;
+        bottom:-4.3%;
         left:44%;
         height: 30px;
         width: 30px;
@@ -57,6 +61,10 @@
     .articlecontainer__restaurant {
         height:22%;
         width:80%;
+        transition: transform 1s;
+    }
+    .articlecontainer__restaurant:hover {
+        transform: scale(1.05)
     }
     .iconheart {
         font-size:22px;
