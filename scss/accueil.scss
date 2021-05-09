@@ -11,6 +11,32 @@ body{
     font-family:"Roboto", sans-serif;
     position: inherit;
 }
+//Début loading page//
+.loadercontainer {
+    position:fixed;
+    height:100%;
+    width: 100%;
+    left:0;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:10000;
+    animation:loader 0.6s;
+    animation-fill-mode: both;
+    background: linear-gradient(175deg,#FF79DA 10%,#9356DC 95%);
+    animation-delay: 1.75s;
+
+    .lettre {
+        color:#484848;
+        font-size:7.5vw;
+        letter-spacing: 15px;
+        margin-bottom: 145px;
+        animation:flash linear 0.7s infinite;
+     }
+}
+//fin loading page//
+
 header > div {
     position: relative;
     display: flex;
@@ -20,11 +46,12 @@ header > div {
     width: 100%;
     box-shadow: 0 5px 10px 0 #00000030
 }
-.logo{
+
+.logo {
     width: auto;
     height: 30px;
 }
-.placerestaurant{
+.placerestaurant {
     @include placerestaurant;
       
     .placerestaurant__iconposition{
@@ -73,16 +100,20 @@ header > div {
       transition:transform 150ms, box-shadow 150ms;
     }
 }
+
+.socialmedia {
+    display:none;
+}
  
-.fonctionality{
+.fonctionality {
     position: relative;
     
-    .menupage{
+    .menupage {
         padding-left: 6%;
         padding-top: 13%;
         margin: 0px;
     
-        .fonctionality__cards{
+        .fonctionality__cards {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -90,7 +121,7 @@ header > div {
         }      
     }
 }
-.cards{
+.cards {
     display: flex;
     border: 1px solid transparent;
     background-color: #F2F2F2;
@@ -135,12 +166,12 @@ header > div {
 
 //section//
 
-.menupage-section{
+.menupage-section {
     background-color: #F6F6F6;
     height: auto;
 }
 
-.articlecontainer{
+.articlecontainer {
     display:flex;
     justify-content:center;
     flex-direction: column;
@@ -192,9 +223,9 @@ header > div {
         }
     }
 }
-.articlecontainer__restaurant__position{
+.articlecontainer__restaurant__position {
     position:relative;
-    .new{
+    .new {
         @include new;
     }
     @-webkit-keyframes heartbeat {
@@ -235,12 +266,28 @@ header > div {
 
 //footer//
 
-.footer{
+.footer {
     background-color:#353535;
     padding:25px 25px 35px;
     display:flex;
     flex-direction: column;
     color:white;
+
+    .logofooter {
+        font-size: 25px;
+        width:100%;
+        margin: 0px 0px 8px 0px !important;
+        font-family: "Shrikhand", sans-serif;
+    }
+    .footer__icon {
+        display:flex;
+        align-items: center;
+    
+        .footer__icon__font {
+            padding-right:8px;
+            margin: 0px;
+        }
+    }
 }
 .footer a{
     cursor: pointer;
@@ -251,18 +298,26 @@ header > div {
 .footer > div {
     margin: 4px 0;
 }
-.logofooter{
-    font-size: 25px;
-    width:100%;
-    margin: 0px 0px 8px 0px !important;
-    font-family: "Shrikhand", sans-serif;
-}
-.footer__icon{
-    display:flex;
-    align-items: center;
 
-    .footer__icon__font{
-        padding-right:8px;
-        margin: 0px;
+//animations//
+@keyframes loader {
+    100% {
+        z-index: -10;
+        opacity:0;
+    }
+}
+
+@keyframes flash {
+    0%{
+       color:white;
+       text-shadow: 0 0 7px #fff900;
+    }
+    90% {
+       color:#484848;
+       text-shadow: none;
+    }
+    100% {
+       color:black;
+       text-shadow: 0 0 7px #fff900;
     }
 }

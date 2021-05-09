@@ -92,7 +92,7 @@ header > div {
     transition:transform 150ms, box-shadow 150ms;
 }
 
-.fonctionality{
+.fonctionality {
     position: relative;
 }
 .fonctionality__cards{
@@ -104,7 +104,7 @@ header > div {
 }
 
 
-.cards{
+.cards {
     display: flex;
     border: 1px solid transparent;
     background-color: #F2F2F2;
@@ -117,14 +117,14 @@ header > div {
     box-shadow:0 0 10px rgb(0,0,0,0.2);
     cursor: pointer;
 }
-.cards--color{
+.cards--color {
     background-color:#f2eafb;
 }
-.cards__icone--color{
+.cards__icone--color {
     color:#9356DC;
 }
 
-.cards__number{
+.cards__number {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -147,7 +147,7 @@ header > div {
     align-items: center;
 }
 
-.menupage-section{
+.menupage-section {
     background-color: #F6F6F6;
     height: auto;
 }
