@@ -1,0 +1,47 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  max-width: 767px;
+  font-family: "Roboto", sans-serif;
+  position: inherit;
+  background-color: #F6F6F6;
+}
+
+.loadercontainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10000;
+  -webkit-animation: loader 0.6s;
+          animation: loader 0.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+
+.loadercontainer .lettre {
+  color: #484848;
+  font-size: 7.5vw;
+  letter-spacing: 15px;
+  margin-bottom: 145px;
+  -webkit-animation: flash linear 0.7s infinite;
+          animation: flash linear 0.7s infinite;
+}
+/*# sourceMappingURL=test.css.map */

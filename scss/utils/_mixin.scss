@@ -1,0 +1,38 @@
+@mixin placerestaurant {
+   display:flex;
+   border: 1px solid transparent;
+   background-color:#EAEAEA;
+   width: 100%;
+   height: 50px;
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin home {
+    background-color:#F6F6F6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 20px;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+@mixin new {
+        position:absolute;
+        border:1px solid transparent;
+        width:80px;
+        height:30px;
+        z-index:2;
+        color:#278870;
+        background-color:#99E2D0;
+        font-weight: 500;
+        font-size:0.94rem;
+        right:15px;
+        top:15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+}
