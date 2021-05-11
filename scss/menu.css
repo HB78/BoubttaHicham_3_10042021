@@ -32,8 +32,8 @@ body {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
-  -webkit-animation-delay: 0.35s;
-          animation-delay: 0.35s;
+  -webkit-animation-delay: 0.50s;
+          animation-delay: 0.50s;
 }
 
 .loadercontainer .lettre {
@@ -59,7 +59,7 @@ body {
   background-color: white;
 }
 
-.header .header__icon {
+.header__icon {
   font-weight: 800;
   text-rendering: auto;
   position: absolute;
@@ -67,7 +67,7 @@ body {
   font-size: 17px;
 }
 
-.header .header__logo {
+.header__logo {
   width: 35vw;
   padding: 1.3rem 0rem;
   font-family: "shrikhand", sans-serif;
@@ -179,8 +179,8 @@ section {
           align-items: center;
   padding: 0% 3%;
   line-height: 13px;
-  -webkit-box-shadow: 0 5px 10px 0 black;
-          box-shadow: 0 5px 10px 0 black;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   -webkit-animation-name: menuAppear;
           animation-name: menuAppear;

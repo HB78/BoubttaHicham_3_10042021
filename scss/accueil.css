@@ -31,8 +31,8 @@ body {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s;
+  -webkit-animation-delay: 0.50s;
+          animation-delay: 0.50s;
 }
 
 .loadercontainer .lettre {
@@ -152,9 +152,10 @@ header > div {
   transition: -webkit-transform 150ms;
   transition: transform 150ms;
   transition: transform 150ms, -webkit-transform 150ms;
+  cursor: pointer;
 }
 
-.home .home__btn .home__btn:hover {
+.home .home__btn:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
   -webkit-transition: -webkit-transform 150ms, -webkit-box-shadow 150ms;

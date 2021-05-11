@@ -1,5 +1,5 @@
-
 @import "./utils/mixin";
+@import "./utils/variable";
 
 body{
     overflow-x: hidden;
@@ -13,19 +13,7 @@ body{
 }
 //Début loading page//
 .loadercontainer {
-    position:fixed;
-    height:100%;
-    width: 100%;
-    left:0;
-    top:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index:10000;
-    animation:loader 0.6s;
-    animation-fill-mode: both;
-    background: linear-gradient(175deg,#FF79DA 10%,#9356DC 95%);
-    animation-delay: 1.75s;
+@include loadercontainer;
 
     .lettre {
         color:#484848;
@@ -53,49 +41,41 @@ header > div {
 }
 .placerestaurant {
     @include placerestaurant;
+
+    &__position {
+        color:black;
+        font-size:16px;
+        font-family: "roboto", sans-serif;
+        font-weight: 500;
+    }
+    &__iconposition {
+        padding-right:2%;
+    }
 }
-.placerestaurant__position{
-    color:black;
-    font-size:16px;
-    font-family: "roboto", sans-serif;
-    font-weight: 500;
-}
-.placerestaurant__iconposition{
-    padding-right:2%;
-}
-.home{
+
+
+.home {
     @include home;
+
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        font-size:22px;
+        color:black;
+    }
+    &__subtitle {
+        text-align: center;
+        font-size: 16px;
+    }
+
 }
-.home__title{
-    text-align: center;
-    font-weight: 700;
-    font-size:22px;
-    color:black;
-}
-.home__subtitle{
-    text-align: center;
-    font-size: 16px;
-}
+
 .home .home__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 230px;
-    height: 50px;
-    padding: 5.5% 5%;
-    box-sizing: border-box;
-    border-radius: 4rem;
-    border: transparent;
-    font-size: 1rem;
-    background: linear-gradient(175deg,#FF79DA 10%,#9356DC 95%);
-    color: white;
-    box-shadow: 0 10px 20px 1px rgba(0,0,0,0.3);
-    margin-top: 4%;
-    transition: transform 150ms;
+@include homebtn;
  
-     .home__btn:hover{
-      transform: scale(0.98);
-      transition:transform 150ms, box-shadow 150ms;
+    &:hover {
+    transform: scale(0.98);
+    transition:transform 150ms, box-shadow 150ms;
     }
 }
 
@@ -118,17 +98,7 @@ header > div {
     height: 330px;
 }  
 .cards {
-    display: flex;
-    border: 1px solid transparent;
-    background-color: #F2F2F2;
-    height: 74px;
-    width:90%;
-    margin:0% 4%;
-    border-radius:1.3rem;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-    cursor: pointer;
+    @include cards;
 }
 .cards__number{
     position: absolute;
@@ -185,7 +155,7 @@ header > div {
     box-shadow:0 0 10px rgba(0,0,0,0.5);
     object-fit: contain;
 }
-.image{
+.image {
     width:100%;
     height:70%;
     border-radius:1rem 1rem 0rem 0rem;
@@ -200,7 +170,7 @@ header > div {
     align-items: center;
     justify-content: space-between;
 }
-.iconheart{
+.iconheart {
     padding-right:5%;
     font-size:20px;
 }
