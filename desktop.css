@@ -1,4 +1,4 @@
-@media (min-width:1025px) and (max-width:2700px) {
+@media (min-width:1025px) and (max-width:1700px) {
     body {
         max-width:1700px;
     }
@@ -111,7 +111,7 @@
   .socialmedia {
     position:absolute;
     left:0%;
-    top:40%;
+    top:38%;
     width: 250px;
     display:flex;
     flex-direction: column;

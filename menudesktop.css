@@ -1,6 +1,9 @@
-@media (min-width:1025px) and (max-width:2700px) {
+@media (min-width:1025px) and (max-width:1700px) {
     body {
         max-width:1700px;
+    }
+    .header__icon {
+        font-size: 22px;
     }
     .image {
         width: 100%;
