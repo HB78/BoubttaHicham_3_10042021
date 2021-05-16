@@ -60,3 +60,67 @@
     }
 
 }
+
+/*ECRAN 4K*/
+
+@media (min-width:1701px) and (max-width:2700px) {
+    body {
+        max-width: 2700px;
+    }
+    .header__icon {
+        font-size: 46px;
+    }
+    .image {
+        width: 100%;
+    }
+    section {
+        height:2100px;
+        width:90%;
+        border:solid 2px black;
+        margin: auto;
+        border-radius:42px 42px 42px 42px;
+    }
+    .section__menu__title {
+        font-size: 46px;
+    }
+    .section__menu__icon {
+        font-size: 40px;
+    }
+
+    .article__menu__food {
+        width: 70%;
+        height:30%;
+    }
+    .article__menu__food--height {
+        height:22.5%;
+    }
+    .article__menu__food div > p {
+        font-size:30px;
+    }
+    
+    .menucheck__icon {
+        font-size: 1.5rem;
+    }
+    .titlemenu {
+        font-size:30px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding:1.8% 0%;
+    }
+    .underlinemenu {
+        width:420px;
+    }
+    .buttoncommande {
+        width:480px;
+        font-size:28px;
+        cursor: pointer;
+        padding: 3% 3%;
+        margin-top: 3.3%;
+    }
+    .footer {
+        align-items: center;
+        text-align: center;
+        font-size: 28px;
+    }
+}
