@@ -115,11 +115,11 @@ section {
 .article__menu__food {
  @include articlemenufood;
 }
-
 .article__menu__food__mixture{
     font-size:18px;
     font-weight: bolder;
 }
+
 //début de la partie animation des menus//
 
 .article__menu__food--height {
@@ -134,8 +134,15 @@ section {
 .article__menu__food--delay2 {
     animation-delay: 800ms;
 }
+.article__menu__food .food  {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+} 
 .article__menu__food:hover .article__menu__food__price {
         padding-right:15%;
+        padding-left:7%;
 }
 .article__menu__food:hover .menucheck {
         visibility: visible;
@@ -273,5 +280,7 @@ a {
         transform: scale(1);
     }
 }
+
+
 
 

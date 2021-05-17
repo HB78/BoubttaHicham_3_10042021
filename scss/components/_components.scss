@@ -1,0 +1,26 @@
+//BOUTON ACCUEIL//
+
+.home .home__btn {
+    @include homebtn;
+     
+        &:hover {
+        transform: scale(0.98);
+        transition:transform 150ms, box-shadow 150ms;
+        }
+}
+
+//BUTTON MENU//
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttoncommande {
+@include buttoncommande;
+
+    &:hover {
+    transform: scale(0.98);
+    transition:transform 150ms, box-shadow 150ms;
+    }
+}

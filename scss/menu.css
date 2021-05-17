@@ -216,8 +216,16 @@ section {
           animation-delay: 800ms;
 }
 
+.article__menu__food .food {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .article__menu__food:hover .article__menu__food__price {
   padding-right: 15%;
+  padding-left: 7%;
 }
 
 .article__menu__food:hover .menucheck {
