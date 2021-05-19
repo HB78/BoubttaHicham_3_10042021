@@ -298,8 +298,16 @@ a{
   .coeur2:active + .coeur3 { 
      display:block !important;
   }
-  .coeur3:hover + .coeur2 { 
+  .coeur3:active + .coeur2 { 
     display:none;
+ }
+ .menu__like {
+    transition-duration: .25s;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
  }
 
  /* loading page*/
@@ -347,3 +355,4 @@ a{
      }
  }
 
+ 

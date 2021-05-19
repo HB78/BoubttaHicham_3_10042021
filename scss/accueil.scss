@@ -170,25 +170,67 @@ header > div {
     align-items: center;
     justify-content: space-between;
 }
-.iconheart {
-    padding-right:5%;
-    font-size:20px;
-}
+.menu {
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+  
+  
+    &__btn {
+      height: 2rem;
+      width: 2rem;
+      background-color: transparent;
+      padding: 0;
+      padding-right: 7px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor: pointer;
+      position: relative;
+      background-color: black;
+      
+      &:hover::before {
+        opacity: 1;
+      }
+      
+      &::before {
+        opacity: 0;
+        transition: 0.5s;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background:linear-gradient(0deg, purple 0%, violet  100%);
+      }
+    }
+  
+    &__like {
+      transition-duration: .25s;
+      background-color:white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      mix-blend-mode: lighten;
+    }
+  
+    &__btn:hover {
+      .menu__like {
+        &--noBg {
+          opacity: 0;
+        }
+      }
+    }
+  }
 
-.coeur3 {
-    position:absolute;
-    right:5%;
-    top:80%;
-    display:none !important; 
-    color:#9356DC;
-    background-color: white;
-}          
-.coeur2:hover + .coeur3 { 
-    display:block !important;
-}
-.coeur3:hover + .coeur2 { 
-    display:none;
-}
     
 
 

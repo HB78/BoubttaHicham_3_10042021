@@ -12,6 +12,7 @@ body {
 }
 
 .loadercontainer {
+  overflow-x: hidden;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -134,7 +135,8 @@ section {
 .titlemenu {
   padding-left: 7%;
   padding-bottom: 2%;
-  padding-top: 3%;
+  padding-top: 6%;
+  font-weight: bold;
 }
 
 .underlinemenu {
