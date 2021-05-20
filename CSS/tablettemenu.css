@@ -20,6 +20,19 @@
     .article__menu__food {
         height:28%;
     }
+    .article__menu__food:hover .article__menu__food__mixture {
+        text-overflow:initial;
+        overflow:initial;
+        white-space:normal;
+        width: 100%;
+    }
+    .article__menu__food:hover .food {
+        white-space:normal;
+        text-overflow:initial;
+        overflow:initial;
+        width:100%;
+        font-size:22px;
+    }
     .titlemenu {
         font-size:20px;
         display:flex;

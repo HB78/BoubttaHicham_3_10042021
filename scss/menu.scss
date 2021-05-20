@@ -120,6 +120,12 @@ section {
     font-size:18px;
     font-weight: bolder;
 }
+.article__menu__food:hover .article__menu__food__mixture {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+}
 
 //début de la partie animation des menus//
 
@@ -140,55 +146,82 @@ section {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-} 
+}
+.article__menu__food:hover .article__menu__food__mixture {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+}
+.article__menu__food:hover .food {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width:70%;
+    font-size: 14px;
+}
+
+.article__menu__food__price {
+    transition-duration: 500ms;
+}
 .article__menu__food:hover .article__menu__food__price {
-        padding-right:15%;
-        padding-left:7%;
+    margin-right: 17%;
+    transition-duration: 500ms;
 }
 .article__menu__food:hover .menucheck {
-        visibility: visible;
-        transition-duration: 400ms;
-        width:16.5%;
-        transform:translate(-60%);
-        overflow-y: hidden;
+    visibility: visible;
+    transition-duration: 400ms;
+    width: 17%;
+    overflow-y: hidden;
+}
+.article__menu__food:hover .menucheck__icon {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition-duration: 400ms;
+    transform: rotate(360deg);
 }
 .article__menu__food:hover .menucheck__icon > i {
-        transition-duration: 400ms;
-        transform: rotate(360deg);
+    transition-duration: 500ms;
+    transform: rotate(360deg);
+    font-size:22px;
 }
 
 .menucheck {
     visibility: hidden;
     position:absolute;
-    width:10%;
-    height: 100%;
-    right:-11%;
+    width:0%;
+    height:100%;
+    right:0%;
     display: flex;
     justify-content: center;
     border-radius: 0rem 1rem 1rem 0rem;
     background: #99E2D0;
     transition: 400ms;
-    padding-bottom: 0.9%;
 
     &__icon {
-        font-size: 1.3rem;
-        position: absolute;
-        top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        transition-duration: 400ms;
-        transform: rotate(360deg);
-        color: #FFFFFF;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition-duration: 400ms;
+    transform: rotate(360deg);
+    color: #FFFFFF;
     }
 }
 
 .menucheck__icon > i {
     transition:rotate(360deg);
-    transition-duration: 400ms;
-    }
+    transition-duration: 1000ms;
+    font-size: 0rem;
+}
 //fin de la partie animation des menus//    
 
 

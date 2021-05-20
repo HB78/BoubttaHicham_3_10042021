@@ -27,6 +27,19 @@
         width: 70%;
         height:30%;
     }
+    .article__menu__food:hover .article__menu__food__mixture {
+        text-overflow:initial;
+        overflow:initial;
+        white-space:normal;
+        width: 100%;
+     }
+     .article__menu__food:hover .food {
+        white-space:normal;
+        text-overflow:initial;
+        overflow:initial;
+        width:100%;
+        font-size:20px;
+    }
     .article__menu__food--height {
         height:22.5%;
     }
@@ -90,6 +103,19 @@
     .article__menu__food {
         width: 70%;
         height:30%;
+    }
+    .article__menu__food:hover .article__menu__food__mixture {
+        text-overflow:initial;
+        overflow:initial;
+        white-space:normal;
+        width: 100%;
+     }
+    .article__menu__food:hover .food {
+        white-space:normal;
+        text-overflow:initial;
+        overflow:initial;
+        width:100%;
+        font-size:20px;
     }
     .article__menu__food--height {
         height:22.5%;
