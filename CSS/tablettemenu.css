@@ -33,6 +33,13 @@
         width:100%;
         font-size:22px;
     }
+    .article__menu__food div > .food {
+        white-space:normal;
+        text-overflow:initial;
+        overflow:initial;
+        width:100%;
+        font-size:22px;
+    }
     .titlemenu {
         font-size:20px;
         display:flex;

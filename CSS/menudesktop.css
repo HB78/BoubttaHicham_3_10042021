@@ -40,6 +40,14 @@
         width:100%;
         font-size:20px;
     }
+    .article__menu__food div > .food {
+        white-space:normal;
+        text-overflow:initial;
+        overflow:initial;
+        width:100%;
+        font-size:20px;
+    }
+    
     .article__menu__food--height {
         height:22.5%;
     }
@@ -111,6 +119,13 @@
         width: 100%;
      }
     .article__menu__food:hover .food {
+        white-space:normal;
+        text-overflow:initial;
+        overflow:initial;
+        width:100%;
+        font-size:20px;
+    }
+    .article__menu__food div > .food {
         white-space:normal;
         text-overflow:initial;
         overflow:initial;
