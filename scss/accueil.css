@@ -331,9 +331,8 @@ header > div {
 .menu__btn {
   height: 2rem;
   width: 2rem;
-  background-color: transparent;
   padding: 0;
-  padding-right: 7px;
+  margin-right: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,8 +361,8 @@ header > div {
   left: 0;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(purple), to(violet));
-  background: linear-gradient(0deg, purple 0%, violet 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(pink), to(purple));
+  background: linear-gradient(0deg, pink 0%, purple 100%);
 }
 
 .menu__like {
