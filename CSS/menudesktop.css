@@ -123,20 +123,20 @@
         text-overflow:initial;
         overflow:initial;
         width:100%;
-        font-size:20px;
+        font-size:30px;
     }
     .article__menu__food div > .food {
         white-space:normal;
         text-overflow:initial;
         overflow:initial;
         width:100%;
-        font-size:20px;
+        font-size:28px;
     }
     .article__menu__food--height {
         height:22.5%;
     }
     .article__menu__food div > p {
-        font-size:30px;
+        font-size:28px;
     }
     
     .menucheck__icon {
