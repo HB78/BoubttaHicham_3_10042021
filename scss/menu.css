@@ -254,7 +254,7 @@ section {
 }
 
 .article__menu__food__mixture {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bolder;
 }
 
@@ -303,7 +303,14 @@ section {
   text-overflow: ellipsis;
   overflow: hidden;
   width: 70%;
-  font-size: 14px;
+  font-size: 12.5px;
+}
+
+.article__menu__food div > .food {
+  white-space: normal;
+  text-overflow: initial;
+  overflow: initial;
+  width: 100%;
 }
 
 .article__menu__food__price {
