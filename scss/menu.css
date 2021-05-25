@@ -119,76 +119,47 @@ section {
           box-sizing: border-box;
 }
 
-.menu {
-  margin-top: -4rem;
-  border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
-  z-index: 1;
-  position: relative;
-}
-
-.menu__btn {
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: transparent 0px solid;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.iconic {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 25;
   cursor: pointer;
   position: relative;
-  background-color: black;
-  margin-right: 5%;
+  margin-right: 20px;
 }
 
-.menu__btn:hover::before {
-  opacity: 1;
+.iconic:hover {
+  stroke: #ff2581;
 }
 
-.menu__btn::before {
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  content: "";
+svg {
+  overflow: visible;
+  width: 2rem;
+}
+
+path {
+  stroke-dashoffset: 0px;
+  stroke-dasharray: 1600px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.hearttwo {
   position: absolute;
-  top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(pink), to(purple));
-  background: linear-gradient(0deg, pink 0%, purple 100%);
+  right: 0;
+  z-index: -1;
+  stroke: none;
 }
 
-.menu__like {
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
-  background-color: #f6f6f6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  mix-blend-mode: lighten;
+.heartone:hover path {
+  -webkit-animation: anime 2s ease-in-out forwards;
+          animation: anime 2s ease-in-out forwards;
 }
 
-.menu__btn:hover .menu__like--noBg {
-  opacity: 0;
+.heartone:hover ~ .hearttwo path {
+  -webkit-animation: animetwo 2s ease-in-out forwards;
+          animation: animetwo 2s ease-in-out forwards;
 }
 
 .titlemenu {
@@ -575,6 +546,106 @@ a {
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@-webkit-keyframes anime {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  30% {
+    stroke-dashoffset: 800;
+  }
+  60% {
+    stroke-dashoffset: 3100;
+    fill: transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    fill: #ff2581;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    stroke-dashoffset: 3200;
+    fill: #ff2581;
+  }
+}
+
+@keyframes anime {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  30% {
+    stroke-dashoffset: 800;
+  }
+  60% {
+    stroke-dashoffset: 3100;
+    fill: transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    fill: #ff2581;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    stroke-dashoffset: 3200;
+    fill: #ff2581;
+  }
+}
+
+@-webkit-keyframes animetwo {
+  70% {
+    fill: transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    fill: #ff7eb4;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@keyframes animetwo {
+  70% {
+    fill: transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    fill: #ff7eb4;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=menu.css.map */

@@ -170,68 +170,42 @@ header > div {
     align-items: center;
     justify-content: space-between;
 }
-.menu {
-    margin-top: -4rem;
-    border-radius: 2rem 2rem 0 0;
-    background-color: #f6f6f6;
-    z-index: 1;
-    position: relative;
-  
-  
-    &__btn {
-      height: 2rem;
-      width: 2rem;
-      padding: 0;
-      margin-right: 7px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      cursor: pointer;
-      position: relative;
-      background-color: black;
-      
-      &:hover::before {
-        opacity: 1;
-      }
-      
-      &::before {
-        opacity: 0;
-        transition: 0.5s;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background:linear-gradient(0deg, pink 0%, purple 100%);
-      }
-    }
-  
-    &__like {
-      transition-duration: .25s;
-      background-color:white;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      mix-blend-mode: lighten;
-    }
-  
-    &__btn:hover {
-      .menu__like {
-        &--noBg {
-          opacity: 0;
-        }
-      }
-    }
+//animation du coeur//
+.iconic {
+    fill: transparent;
+    stroke:black;
+    stroke-width:20;
+    cursor: pointer;
+    position: relative; 
+    margin-right: 10px;
+
   }
-
-    
-
+  .iconic:hover {
+      stroke:#ff2581;
+  }
+  svg {
+    overflow: visible;
+    width:2rem;
+  }
+  path {
+    stroke-dashoffset: 0px;
+    stroke-dasharray: 1600px;
+    transform-origin: center;
+  }
+  .hearttwo {
+    position:absolute;
+    left: 0;
+    right:0;
+    z-index: -1;
+    stroke:none;
+  }
+  .heartone:hover path {
+     animation: anime 2s ease-in-out forwards;
+  }
+  .heartone:hover ~ .hearttwo path {
+    animation: animetwo 2s ease-in-out forwards;
+  }
+//fin de l'animation des coeurs//
 
 .articlecontainer__restaurant__position {
     position:relative;
@@ -336,3 +310,50 @@ a {
        text-shadow: 0 0 7px #fff900;
     }
 }
+
+@keyframes anime {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    30% {
+      stroke-dashoffset: 800;
+    }
+    60% {
+      stroke-dashoffset: 3100;
+      fill:transparent;
+      transform: scale(1);
+    }
+    80% {
+      fill: #ff2581;
+      transform: scale(1.1)
+    }
+    90% {
+      transform: scale(1)
+  }
+    100% {
+      stroke-dashoffset: 3200;
+      fill : #ff2581;  
+    }
+  }
+  
+  @keyframes animetwo {
+    70% {
+     fill: transparent;
+     transform: scale(1)
+    }
+    80% {
+      fill: #ff7eb4;
+      transform: scale(1.1);
+      opacity: 1; 
+    }
+    90% {
+      opacity:1;
+    }
+    100% {
+      transform: scale(2.5);
+      opacity:0;
+    }
+  }
+  
+
+

@@ -20,6 +20,9 @@
     .article__menu__food {
         height:28%;
     }
+    .iconic {
+        margin-right: 40px;
+    }
     .article__menu__food:hover .article__menu__food__mixture {
         text-overflow:initial;
         overflow:initial;

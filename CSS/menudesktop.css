@@ -27,6 +27,9 @@
         width: 70%;
         height:30%;
     }
+    .iconic {
+        margin-right: 40px;
+    }
     .article__menu__food:hover .article__menu__food__mixture {
         text-overflow:initial;
         overflow:initial;
@@ -111,6 +114,9 @@
     .article__menu__food {
         width: 70%;
         height:30%;
+    }
+    .iconic {
+        margin-right: 40px;
     }
     .article__menu__food:hover .article__menu__food__mixture {
         text-overflow:initial;
