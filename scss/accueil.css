@@ -323,7 +323,7 @@ header > div {
 .iconic {
   fill: transparent;
   stroke: black;
-  stroke-width: 20;
+  stroke-width: 30;
   cursor: pointer;
   position: relative;
   margin-right: 10px;
