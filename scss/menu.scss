@@ -1,4 +1,6 @@
 @import "./utils/mixin";
+@import "./utils/variable";
+@import "./animations/animations";
 
 body{
     overflow-x: hidden;
@@ -312,86 +314,3 @@ a {
     text-decoration: none;
     color:black;
 }
-//animations//
-@keyframes loader {
-    100% {
-        z-index: -10;
-        opacity:0;
-    }
-}
-
-@keyframes flash {
-    0%{
-       color:white;
-       text-shadow: 0 0 7px #fff900;
-    }
-    90% {
-       color:#484848;
-       text-shadow: none;
-    }
-    100% {
-       color:black;
-       text-shadow: 0 0 7px #fff900;
-    }
-}
-@keyframes menuAppear {
-    0% {
-        opacity:0;
-        transform: scale(0);
-    }
-    100% {
-        opacity:1;
-        transform: scale(1);
-    }
-}
-@keyframes anime {
-    0% {
-      stroke-dashoffset: 0;
-    }
-    30% {
-      stroke-dashoffset: 800;
-    }
-    60% {
-      stroke-dashoffset: 3100;
-      fill:transparent;
-      transform: scale(1);
-    }
-    80% {
-      fill: #ff2581;
-      transform: scale(1.1)
-    }
-    90% {
-      transform: scale(1)
-  }
-    100% {
-      stroke-dashoffset: 3200;
-      fill : #ff2581;  
-    }
-  }
-  
-  @keyframes animetwo {
-    70% {
-     fill: transparent;
-     transform: scale(1)
-    }
-    80% {
-      fill: #ff7eb4;
-      transform: scale(1.1);
-      opacity: 1; 
-    }
-    90% {
-      opacity:1;
-    }
-    100% {
-      transform: scale(2.5);
-      opacity:0;
-    }
-  }
-  
-
-
-
-
-
-
-
