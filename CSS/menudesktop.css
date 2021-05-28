@@ -120,6 +120,14 @@
     .iconic {
         margin-right: 40px;
     }
+    /*reglage de la height dans les entrées dans la partie 4k*/
+    .article__menu--height {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height:352px;
+    }
     .article__menu__food:hover .article__menu__food__mixture {
         text-overflow:initial;
         overflow:initial;
