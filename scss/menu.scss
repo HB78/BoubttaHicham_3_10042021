@@ -1,8 +1,10 @@
 @import "./utils/mixin";
 @import "./utils/variable";
 @import "./animations/animations";
+@import "./layout/layout";
+@import "./components/components";
 
-body{
+body {
     overflow-x: hidden;
     margin:0;
     padding:0 0%;
@@ -256,61 +258,5 @@ section {
 }
 //fin de la partie animation des menus//    
 
-
-
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.buttoncommande {
-@include buttoncommande;
-
-    &:hover {
-    transform: scale(0.98);
-    transition:transform 150ms, box-shadow 150ms;
-    }
-}
-
 //fin de section//
 
-//footer//
-
-.footer {
-    background-color:#353535;
-    padding:25px 25px 35px;
-    display:flex;
-    flex-direction: column;
-    color:white;
-
-    .logofooter {
-        font-size: 25px;
-        width:100%;
-        margin: 0px 0px 8px 0px !important;
-        font-family: "Shrikhand", sans-serif;
-    }
-    .footer__icon {
-        display:flex;
-        align-items: center;
-    
-        .footer__icon__font {
-            padding-right:8px;
-            margin: 0px;
-        }
-    }
-}
-.footer a{
-    cursor: pointer;
-    color:white;
-}
-.footer a:hover{
-    color: #99E2D0;
-}
-.footer > div {
-    margin: 4px 0;
-}
-
-a {
-    text-decoration: none;
-    color:black;
-}

@@ -203,6 +203,147 @@
   }
 }
 
+.footer {
+  background-color: #353535;
+  padding: 25px 25px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.footer .logofooter {
+  font-size: 25px;
+  width: 100%;
+  margin: 0px 0px 8px 0px !important;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.footer .footer__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer__icon .footer__icon__font {
+  padding-right: 8px;
+  margin: 0px;
+}
+
+.footer a {
+  cursor: pointer;
+  color: white;
+}
+
+.footer a:hover {
+  color: #99E2D0;
+}
+
+.footer > div {
+  margin: 4px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.home .home__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 230px;
+  height: 50px;
+  padding: 5.5% 5.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4rem;
+  border: transparent;
+  font-size: 1rem;
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+  color: white;
+  -webkit-box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.3);
+  margin-top: 4%;
+  -webkit-transition: -webkit-transform 150ms;
+  transition: -webkit-transform 150ms;
+  transition: transform 150ms;
+  transition: transform 150ms, -webkit-transform 150ms;
+  cursor: pointer;
+}
+
+.home .home__btn:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transition: -webkit-transform 150ms, -webkit-box-shadow 150ms;
+  transition: -webkit-transform 150ms, -webkit-box-shadow 150ms;
+  transition: transform 150ms, box-shadow 150ms;
+  transition: transform 150ms, box-shadow 150ms, -webkit-transform 150ms, -webkit-box-shadow 150ms;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttoncommande {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 220px;
+  height: 50px;
+  padding: 5% 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4rem;
+  border: transparent;
+  font-size: 1rem;
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+  color: white;
+  -webkit-box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.3);
+  margin-top: 11%;
+  -webkit-transition: -webkit-transform 150ms;
+  transition: -webkit-transform 150ms;
+  transition: transform 150ms;
+  transition: transform 150ms, -webkit-transform 150ms;
+}
+
+.buttoncommande:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transition: -webkit-transform 150ms, -webkit-box-shadow 150ms;
+  transition: -webkit-transform 150ms, -webkit-box-shadow 150ms;
+  transition: transform 150ms, box-shadow 150ms;
+  transition: transform 150ms, box-shadow 150ms, -webkit-transform 150ms, -webkit-box-shadow 150ms;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -580,107 +721,5 @@ path {
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
   font-size: 0rem;
-}
-
-.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.buttoncommande {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 220px;
-  height: 50px;
-  padding: 5% 5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4rem;
-  border: transparent;
-  font-size: 1rem;
-  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
-  color: white;
-  -webkit-box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.3);
-  margin-top: 11%;
-  -webkit-transition: -webkit-transform 150ms;
-  transition: -webkit-transform 150ms;
-  transition: transform 150ms;
-  transition: transform 150ms, -webkit-transform 150ms;
-}
-
-.buttoncommande:hover {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-  -webkit-transition: -webkit-transform 150ms, -webkit-box-shadow 150ms;
-  transition: -webkit-transform 150ms, -webkit-box-shadow 150ms;
-  transition: transform 150ms, box-shadow 150ms;
-  transition: transform 150ms, box-shadow 150ms, -webkit-transform 150ms, -webkit-box-shadow 150ms;
-}
-
-.footer {
-  background-color: #353535;
-  padding: 25px 25px 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-}
-
-.footer .logofooter {
-  font-size: 25px;
-  width: 100%;
-  margin: 0px 0px 8px 0px !important;
-  font-family: "Shrikhand", sans-serif;
-}
-
-.footer .footer__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer .footer__icon .footer__icon__font {
-  padding-right: 8px;
-  margin: 0px;
-}
-
-.footer a {
-  cursor: pointer;
-  color: white;
-}
-
-.footer a:hover {
-  color: #99E2D0;
-}
-
-.footer > div {
-  margin: 4px 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 /*# sourceMappingURL=menu.css.map */
