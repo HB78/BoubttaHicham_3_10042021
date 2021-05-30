@@ -499,13 +499,13 @@ path {
 }
 
 .heartone:hover path {
-  -webkit-animation: anime 2s ease-in-out forwards;
-          animation: anime 2s ease-in-out forwards;
+  -webkit-animation: anime 2s ease-in forwards;
+          animation: anime 2s ease-in forwards;
 }
 
 .heartone:hover ~ .hearttwo path {
-  -webkit-animation: animetwo 2s ease-in-out forwards;
-          animation: animetwo 2s ease-in-out forwards;
+  -webkit-animation: animetwo 2s ease-in forwards;
+          animation: animetwo 2s ease-in forwards;
 }
 
 .titlemenu {

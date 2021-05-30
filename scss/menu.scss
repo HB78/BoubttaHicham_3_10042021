@@ -114,10 +114,10 @@ section {
     stroke:none;
   }
   .heartone:hover path {
-     animation: anime 2s ease-in-out forwards;
+     animation: anime 2s ease-in forwards;
   }
   .heartone:hover ~ .hearttwo path {
-    animation: animetwo 2s ease-in-out forwards;
+    animation: animetwo 2s ease-in forwards;
   }
 //fin de l'animation des coeurs//
 
