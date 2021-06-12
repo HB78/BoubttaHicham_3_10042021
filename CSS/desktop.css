@@ -181,9 +181,9 @@
 
 /*ECRAN 4K*/
 
-@media (min-width:1701px) and (max-width:2700px) {
+@media (min-width:1701px) and (max-width:5000px) {
     body {
-        max-width:2700px;
+        max-width:5000px;
     }
     header > div {
         height: 120px;

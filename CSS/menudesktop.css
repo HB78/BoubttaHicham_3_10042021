@@ -88,9 +88,9 @@
 
 /*ECRAN 4K*/
 
-@media (min-width:1701px) and (max-width:5500px) {
+@media (min-width:1701px) and (max-width:5000px) {
     body {
-        max-width: 5500px;
+        max-width: 5000px;
     }
     .header__icon {
         font-size: 46px;
