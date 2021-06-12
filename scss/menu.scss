@@ -145,7 +145,7 @@ section {
  @include articlemenufood;
 }
 .article__menu__food__mixture{
-    font-size:16px;
+    font-size:15px;
     font-weight:900;
 }
 .article__menu__food:hover .article__menu__food__mixture {
@@ -219,6 +219,7 @@ section {
     transform: rotate(360deg);
 }
 .article__menu__food:hover .menucheck__icon > i {
+    visibility: visible;
     transition-duration: 500ms;
     transform: rotate(360deg);
     font-size:22px;
@@ -250,11 +251,10 @@ section {
     color: #FFFFFF;
     }
 }
-
 .menucheck__icon > i {
-    transition:rotate(360deg);
-    transition-duration: 1000ms;
-    font-size: 0rem;
+    visibility: hidden;
+    transition-duration: 300ms; 
+    font-size: 16px;   
 }
 //fin de la partie animation des menus//    
 

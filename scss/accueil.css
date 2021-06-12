@@ -339,10 +339,10 @@ a {
 .buttoncommande:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
-  -webkit-transition: -webkit-transform all 150ms;
-  transition: -webkit-transform all 150ms;
-  transition: transform all 150ms;
-  transition: transform all 150ms, -webkit-transform all 150ms;
+  -webkit-transition: -webkit-transform 150ms;
+  transition: -webkit-transform 150ms;
+  transition: transform 150ms;
+  transition: transform 150ms, -webkit-transform 150ms;
   background: linear-gradient(175deg, #FF79DA 100%, #9356DC 0%);
 }
 

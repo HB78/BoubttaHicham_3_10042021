@@ -339,10 +339,10 @@ a {
 .buttoncommande:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
-  -webkit-transition: -webkit-transform all 150ms;
-  transition: -webkit-transform all 150ms;
-  transition: transform all 150ms;
-  transition: transform all 150ms, -webkit-transform all 150ms;
+  -webkit-transition: -webkit-transform 150ms;
+  transition: -webkit-transform 150ms;
+  transition: transform 150ms;
+  transition: transform 150ms, -webkit-transform 150ms;
   background: linear-gradient(175deg, #FF79DA 100%, #9356DC 0%);
 }
 
@@ -574,7 +574,7 @@ path {
 }
 
 .article__menu__food__mixture {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 900;
 }
 
@@ -672,6 +672,7 @@ path {
 }
 
 .article__menu__food:hover .menucheck__icon > i {
+  visibility: visible;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
   -webkit-transform: rotate(360deg);
@@ -720,10 +721,9 @@ path {
 }
 
 .menucheck__icon > i {
-  -webkit-transition: rotate(360deg);
-  transition: rotate(360deg);
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
-  font-size: 0rem;
+  visibility: hidden;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  font-size: 16px;
 }
 /*# sourceMappingURL=menu.css.map */
