@@ -38,7 +38,7 @@
         align-items: center;
         animation: heartbeat 1.5s ease-in-out infinite both;
 }
-@mixin loadercontainer {
+@mixin loadercontainer ($time:0.6s) {
     overflow-x: hidden;
     position:fixed;
     height:100%;
@@ -49,7 +49,8 @@
     justify-content: center;
     align-items: center;
     z-index:10000;
-    animation:loader 0.6s;
+    animation-name:loader;
+    animation-duration: $time;
     animation-fill-mode: both;
     background: linear-gradient(175deg,#FF79DA 10%,#9356DC 95%);
     animation-delay: 0.50s;

@@ -21,6 +21,6 @@
 
     &:hover {
     transform: scale(0.98);
-    transition:transform 150ms, box-shadow 150ms;
+    transition:transform all 150ms;
     }
 }
