@@ -152,7 +152,7 @@ section {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    width: 80%;
+    width: 100%;
 }
 
 //début de la partie animation des menus//
@@ -179,7 +179,7 @@ section {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    width: 80%;
+    width: 100%;
 }
 .article__menu__food:hover .food {
     white-space: nowrap;
@@ -252,7 +252,7 @@ section {
 }
 
 .menucheck__icon > i {
-    transform:rotate(360deg);
+    transition:rotate(360deg);
     transition-duration: 1000ms;
     font-size: 0rem;
 }

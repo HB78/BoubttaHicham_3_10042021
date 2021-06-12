@@ -106,10 +106,11 @@ header > div {
     background-color: #9356DC;
     color:white;
 }
-.cards--color{
+
+.cards:hover {
     background-color:#f2eafb;
 }
-.cards__icone--color{
+.cards:hover .cards__icone {
     color:#9356DC;
 }
 .cards__text{

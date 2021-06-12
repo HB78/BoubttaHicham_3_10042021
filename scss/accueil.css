@@ -292,6 +292,7 @@ a {
   transition: -webkit-transform 150ms, -webkit-box-shadow 150ms;
   transition: transform 150ms, box-shadow 150ms;
   transition: transform 150ms, box-shadow 150ms, -webkit-transform 150ms, -webkit-box-shadow 150ms;
+  background: linear-gradient(175deg, #FF79DA 100%, #9356DC 0%);
 }
 
 .button {
@@ -342,6 +343,7 @@ a {
   transition: -webkit-transform all 150ms;
   transition: transform all 150ms;
   transition: transform all 150ms, -webkit-transform all 150ms;
+  background: linear-gradient(175deg, #FF79DA 100%, #9356DC 0%);
 }
 
 body {
@@ -543,11 +545,11 @@ header > div {
   color: white;
 }
 
-.cards--color {
+.cards:hover {
   background-color: #f2eafb;
 }
 
-.cards__icone--color {
+.cards:hover .cards__icone {
   color: #9356DC;
 }
 

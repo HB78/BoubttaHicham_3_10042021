@@ -292,6 +292,7 @@ a {
   transition: -webkit-transform 150ms, -webkit-box-shadow 150ms;
   transition: transform 150ms, box-shadow 150ms;
   transition: transform 150ms, box-shadow 150ms, -webkit-transform 150ms, -webkit-box-shadow 150ms;
+  background: linear-gradient(175deg, #FF79DA 100%, #9356DC 0%);
 }
 
 .button {
@@ -342,6 +343,7 @@ a {
   transition: -webkit-transform all 150ms;
   transition: transform all 150ms;
   transition: transform all 150ms, -webkit-transform all 150ms;
+  background: linear-gradient(175deg, #FF79DA 100%, #9356DC 0%);
 }
 
 body {
@@ -580,7 +582,7 @@ path {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 80%;
+  width: 100%;
 }
 
 .article__menu__food--height {
@@ -613,7 +615,7 @@ path {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 80%;
+  width: 100%;
 }
 
 .article__menu__food:hover .food {
@@ -718,8 +720,8 @@ path {
 }
 
 .menucheck__icon > i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transition: rotate(360deg);
+  transition: rotate(360deg);
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
   font-size: 0rem;
