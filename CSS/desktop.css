@@ -2,6 +2,9 @@
     body {
         max-width:1700px;
     }
+    a {
+        width: 100%;
+    }
     header > div {
         height: 120px;
     }
@@ -187,6 +190,9 @@
     }
     header > div {
         height: 120px;
+    }
+    a {
+        width: 100%;
     }
     .logo {
         height: 50%;
